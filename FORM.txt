@@ -30,3 +30,9 @@
 3. <textarea>
 
 * form 태그 작성시에 name 꼭 작성
+
+<< Form data 추출 >>
+* client가 server에 요청하는 방식은 get, post 2가지임
+ 1) get 방식 : 직접 주소창에 입력 / <a href= " " >
+ 2) post 방식 : form 태그
+     └ 로그인할때는 post 방식 사용
