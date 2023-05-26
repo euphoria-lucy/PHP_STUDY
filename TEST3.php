@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 // 1. 1부터 10까지의 합 구하기
 $sum = 0;
 
@@ -61,4 +62,23 @@ echo "</br>";
 
 // 6. 3,4를 가지고 삼각형의 넓이 구하기
 echo 3*4/2;
+=======
+
+$real_id = "test";
+$real_pass = "testpass";
+// 사용자가 입력한 id와 pass를 가져옴
+// $_GET $_POST
+
+$id = $_POST["user_id"]; // $id : 사용자가 입력한 id값
+$pass = $_POST["user_pass"];
+
+if ($id == $real_id && $pass == $real_pass) {
+  echo "id : ".$id."<br/>";
+  echo "pass : ".$pass."<br/>";
+} else {
+  echo "잘못입력";
+}
+
+
+>>>>>>> 201e93b8f11c568783b8e77ee579b427701843be
 ?>
