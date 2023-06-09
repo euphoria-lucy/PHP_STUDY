@@ -1,3 +1,62 @@
 << DATABASE >>
 1. database : 데이터들의 집합
-2. DBMS : 사용자가 데이터베이스를 사용하기 쉽게 관리해주는 프로그램
+2. DBMS : 사용자가 데이터베이스를 사용하기 쉽게 관리해주는 프로그램 (DatatBase Management System)
+3. 사용방법
+ 1) 사용할 데이터베이스 생성
+ 2) 계정생성 (id, password) - 계정생성, 사용할 DB 연동
+ 3) 계정에 사용권한 부여 (CRUD < 쿼리 > 권한)
+
+4. 접속방법
+★ mysql -u아이디 -p비밀번호 사용할 데이터베이스 ★
+
+--------------------------------------------------------------------------------------------------------
+
+1. DB생성 
+ create database DB이름
+2. 계정생성
+ create user '계정' identified by '비밀번호';
+3. 계정과 DB연동, 권한부여
+ grant all privileges on DB이름.* to 계정@'localhost' with grant option; 
+
+♣ 계정삭제 : delete from user where user='계정';
+
+4. 해당 DB에 접속
+ mysql -u아이디 -p비밀번호 DB이름
+
+♣ DB 테이블 확인 : show tables;
+
+5. table 만들기
+ create table 테이블이름(
+    → 컬럼이름 자료형(길이), 
+    → .....
+    → );
+
+C : insert
+R : select
+U : update
+D : delete
+
+1. insert into 테이블명(필드, 필드, 필드....) values(값, 값, 값...);
+   insert into 테이블명 values(값, 값, 값...);
+
+데이터조회 : select
+ * : 모든 데이터 select * from 컬럼명
+
+
+
+create table emp(
+empno int(4),
+ename varchar(10),
+job varchar(10),
+mgr int(4),
+hiredate date,
+sal int(10),
+comm int(10),
+deptno int(2),
+primary key(empno));
+
+create table dept(
+deptno int(20),
+dname varchar(20),
+loc varchar(20),
+primary key(deptno));
