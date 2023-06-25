@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 form_one</title>
+    <style>
+      table {
+        margin-left: 15px;
+      }
+
+      td {
+        padding: 10px;
+      }
+
+      input {
+        width: 490px;
+        height: 27px;
+      }
+
+      .close {
+        position: relative;
+        float: right;
+        display: inline-block;
+        *display: inline;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        margin-right: 20px;
+      }
+
+      .close2:after {
+        content: "\00d7";
+        font-size: 25pt;
+        line-height: 45px;
+      }
+
+      button {
+        width: 500px;
+        height: 35px;
+        border-radius: 4px;
+        background-color: #e3d7e6;
+        border-style: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="0623_test_one.php">
+      <table>
+        <tr>
+          <div class="close close2"></div>
+          <h2>회원가입</h2>
+        </tr>
+        <hr />
+
+        <tr>
+          <td>
+            사용자 이름
+            <br />
+            <input type="text" name="user_name" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            이메일
+            <br />
+            <input type="text" name="user_email" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            비밀번호
+            <br />
+            <input type="password" name="user_password" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            비밀번호 확인
+            <br />
+            <input type="password" name="user_password_check" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            학교
+            <br />
+            <input type="text" name="user_school" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            전공
+            <br />
+            <input type="text" name="user_major" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <button type="join" class="btn_center">가입하기</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

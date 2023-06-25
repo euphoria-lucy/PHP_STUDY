@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+
+    <!-- 테마 -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+
+    <title>로그인 form_two</title>
+
+    <style>
+      h2 {
+        background-color: #8dbaee;
+        color: whitesmoke;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h5 {
+        color: #ee82a4;
+        margin-left: 150px;
+        margin-top: 35px;
+      }
+
+      table {
+        width: 100px;
+        margin-left: 50px;
+      }
+
+      input,
+      select {
+        width: 250px;
+        height: 30px;
+        margin: 2px;
+        border-radius: 2px;
+        border: 1px solid grey;
+      }
+
+      button {
+        color: whitesmoke;
+        border: 1px solid black;
+      }
+
+      #user_new_member {
+        margin-left: 100px;
+        background-color: #82d8d5;
+      }
+
+      #user_login {
+        background-color: lightblue;
+      }
+
+      #user_close {
+        background-color: salmon;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="0623_test_two.php">
+      <h2>회원등록</h2>
+      <table class="table table-striped">
+        <h5>* 아래 항목을 빠짐 없이 입력해 주세요.</h5>
+        <tr>
+          <td>등록할 회원 ID</td>
+          <td><input type="text" name="user_id" /></td>
+        </tr>
+
+        <tr>
+          <td>등록할 비밀번호</td>
+          <td><input type="password" name="user_password" /></td>
+        </tr>
+
+        <tr>
+          <td>이름</td>
+          <td><input type="text" name="user_name" /></td>
+        </tr>
+
+        <tr>
+          <td>Email</td>
+          <td><input type="email" name="user_email" /></td>
+        </tr>
+
+        <tr>
+          <td>연락처</td>
+          <td><input type="tel" name="user_tel" /></td>
+        </tr>
+
+        <tr>
+          <td>현주소</td>
+          <td><input type="text" name="user_address" /></td>
+        </tr>
+
+        <tr>
+          <td>나이</td>
+          <td><input type="text" name="user_age" /></td>
+        </tr>
+
+        <tr>
+          <td>성별</td>
+          <td>
+            <select name="user_gender">
+              <option selected value="남">남</option>
+              <option value="여">여</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button type="submit" id="user_new_member">신규회원 등록</button>
+            <button type="submit" id="user_login">로그인</button>
+            <button type="submit" id="user_close">닫기</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

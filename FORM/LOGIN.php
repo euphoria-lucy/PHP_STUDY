@@ -17,8 +17,8 @@ $cellphone_e = $_POST["cellphone_end"];
 $introduce = $_POST["txt"];
 
 echo "아이디 : ".$id."<br/>";
-echo "비밀번호 : ".$id."<br/>";
-echo "비밀번호 확인 : ".$id."<br/>";
+echo "비밀번호 : ".$password."<br/>";
+echo "비밀번호 확인 : ".$password_check."<br/>";
 echo "이름 : ".$name."<br/>";
 echo "성별 : ".$gender."<br/>";
 echo "이메일 : ".$email." @ ".$email_e."<br/>";
