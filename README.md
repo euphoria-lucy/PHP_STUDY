@@ -6,4 +6,4 @@
 
 ### <img src = "https://cdn-icons-png.flaticon.com/128/4341/4341102.png" width = "30" height = "30"> DEVELOPMENT ENVIRONMENT
 - DEVELOP LANGUAGE :  ` PHP `
-- DEVELOP TOOL : ` VISUAL STUDIO CODE ` , `BITNAMI ` 
+- DEVELOP TOOL : ` VISUAL STUDIO CODE ` , `BITNAMI` 
