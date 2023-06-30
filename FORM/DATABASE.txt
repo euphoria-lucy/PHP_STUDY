@@ -42,21 +42,70 @@ D : delete
 데이터조회 : select
  * : 모든 데이터 select * from 컬럼명
 
+----------------------------------------------------------------------------------
 
+<< Select >>
+select (read)
+값을 가지고 오는 것
 
-create table emp(
-empno int(4),
-ename varchar(10),
-job varchar(10),
-mgr int(4),
-hiredate date,
-sal int(10),
-comm int(10),
-deptno int(2),
-primary key(empno));
+< return 값이 없음 >
+insert
+update
+delete
 
-create table dept(
-deptno int(20),
-dname varchar(20),
-loc varchar(20),
-primary key(deptno));
+< return 값이 있음 >
+select - 값을 가져옴 (결과(return)있음)
+
+1. 사원테이블의 모든 레코드 조회
+  - select * from emp;
+
+2. 사원명과 입사일 조회
+  - select ename, hiredate from emp;
+
+3. 사원번호와 이름을 조회
+  - select empno, ename from emp;
+
+4. 사원에 있는 직책의 목록을 조회
+  - select job from emp;
+
+5. 총 사원수 조회 (count)
+  - select count(*) from emp;
+
+<< 조건 : select
+	  from
+	  where 조건; >>
+
+6. 부서번호가 10인 부서 조회 ▷ join 사용해야함
+  - select * from emp where deptno = 10;
+
+7. 이름이 "king"인 사원 조회
+  - select * from emp where ename = 'king';
+
+8. 사원번호가 7700 이상인 사원 조회
+  - select * from emp where empno >= 7700;
+
+9. 급여가 500이상인 사원 조회
+  - select * from emp where 
+
+10. 사원들 중 이름이 S로 시작하는 사원의 사원번호와 이름 조회
+  - select ename, empno from emp where ename like 'S%';
+
+10 - 1. 사원들 중 이름이 S로 끝나는 사원의 사원번호와 이름 조회
+  - select ename, empno from emp where ename like '%S%';
+ - select enmae, empno from emp where ename like '%S_POST['search']%';
+
+11. 사원 이름에 T가 포함된 사원의 사원번호와 이름 조회
+  - select empno, ename from emp where ename like '%T%';
+
+12. 커미션이 300, 500, 1400인 사원의 사번, 이름 커미션 조회
+  - select empno, ename, comm from emp where comm = 300 or comm = 500 or comm = 1400;
+   ▶ select empno, ename, comm from emp where comm in(300, 500, 1400);
+
+13. 월급여가 1200에서 3500 사이의 사원의 사번, 이름, 월급여 조회
+  - select empno, ename, sal from emp where sal between 1200 and 3500;
+
+14. 직급이 매니저이고 부서번호가 30번인 사원의 이름, 사번, 직급 부서번호 조회
+  - select empno, ename, mgr from emp where job = "manager" and deptno = 30;
+
+15. 이름에 S가 포함되지 않는 사원의 사번, 이름 조회
+  - select
