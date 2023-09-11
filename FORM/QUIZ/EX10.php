@@ -1,0 +1,11 @@
+<?php
+
+$num = $_POST["num"];
+
+if($num <= 10) {
+  for ($i = 1; $i <= $num; $i++) {
+    echo "Daniel</br>";
+  }
+}
+
+?>

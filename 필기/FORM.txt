@@ -1,0 +1,31 @@
+<< Form태그 >>
+ - 사용자의 입력을 받는 폼
+
+< form method = "post" action = "①" >
+
+</form>
+ ①번에 들어갈 파일들 : 서버사이드언어 (php, jsp, node, spring, django)
+
+1. <input type = "text"
+                 "password"
+                 "checkbox"
+                 "radio"
+                 "reset"
+                 "button"
+                 "submit"
+              ---------------
+                 "number"
+                 "email"
+                 "color"
+
+<input type="text" name="user_name" maxlength="12" size="20" value="65" />
+  1) maxlength : 입력할 수 있는 문자 갯수
+  2) size : 창의 크기
+  3) value : 초기값
+
+2. <select>
+      <option>
+
+3. <textarea>
+
+* form 태그 작성시에 name 꼭 작성
